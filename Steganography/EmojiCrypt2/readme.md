@@ -23,6 +23,7 @@ The website they used to encode this message was: [http://172.16.1.149/v2](http:
 3. If you solved the previous challenge you should have known that the last hex digit was used in the previous challenge, this was again the case in this challenge and it would have been a good place to start with. If we use 'T' again from the last challenge it becomes: `1F562 1F695 1F004` and we see the ASCII value of 'T' agains in the last hex digits. Which leaves out the first emoji which ends with '2'. Let us now try something non-ASCII like '🚤' this becomes: `1F455 1F331 1F56F 1F6B6 1F4EA 1F694`. The unicode value of '🚤' is `1F6A4` and again, the last hex digits form this value. Which leaves out the first emoji again, this time it ends with '5'. 
 
 4. Before we can write a decoder we need to figure out what this first emoji is used for. This required some experimenting with all sorts of unicode values. 
+
 | Character | Unicode Value (Hex) | Emojis       | Emojis Hex                             |
 | --------- | -------------------:| ------------:| -------------------------------------- |
 | T         | 54                  | ♂➕⛔         |  2642  2795  26D4                      |
@@ -42,7 +43,8 @@ The website they used to encode this message was: [http://172.16.1.149/v2](http:
 The flag is: `UHCTF{EMOJIS ARE FUN}`
 
 ## Notes
-We have heard your feedback and recognize that this challenge was too difficult for the amount of points given. It was already known on the day of the challenge but changing the amount of points would have been unfair. That being said, we will take this into consideration next year. 
+
+We have heard your feedback and recognize that this challenge was too difficult for the amount of points given. We will take this into consideration for the challenges of next year. 
 
 ## Hints
 

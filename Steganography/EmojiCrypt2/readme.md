@@ -36,7 +36,7 @@ The website they used to encode this message was: [http://172.16.1.149/v2](http:
   * A character with 4 emojis has a 3
   * A character with 5 has a 4
   * A character with 6 has a 5
-  Or you could use the hex values of the characters to figure it out:
+Or you could use the hex values of the characters to figure it out:
   * A character which uses 2 hex values has a 2 in the first emoji.
   * A character which uses 3 hex values has 3 in the first emoji.
   * ... 

@@ -18,9 +18,11 @@ The website they used to encode this message was: [http://172.16.1.149/v2](http:
 
 1. This challenge was an excercise in your ability to see data patterns and extract them. The website was given as a tool to help you achieve this goal. 
 
-2. If you played around on the website you should have noticed that one character would now transform into 3 emojis. However this is not entirely correct. If we put in values outside of the ASCII range they transform into more emojis. For instance '🚤' would transform into 6 emojis. This should be an indication that the amount of emojis is variable. If it's variable it needs to be indicated somewhere, otherwise the decoder doesn't know how to decode it either. 
+2. If you played around on the website you should have noticed that one character would now transform into 3 emojis. However this is not entirely correct. If we put in values outside of the ASCII range they transform into more emojis. For instance '🚤' would transform into 6 emojis. This indicates that the amount of emojis is probably variable. 
 
-3. If you solved the previous challenge you should have known that the last hex digit was used in the previous challenge, this was again the case in this challenge and it would have been a good place to start with. If we use 'T' again from the last challenge it becomes: `1F562 1F695 1F004` and we see the ASCII value of 'T' agains in the last hex digits. Which leaves out the first emoji which ends with '2'. Let us now try something non-ASCII like '🚤' this becomes: `1F455 1F331 1F56F 1F6B6 1F4EA 1F694`. The unicode value of '🚤' is `1F6A4` and again, the last hex digits form this value. Which leaves out the first emoji again, this time it ends with '5'. 
+3. If you solved the previous challenge you know that the last hex digit was used to store important data, this was again the case in this challenge and it would have been a good place to start off with. 
+If we use 'T' again from the last challenge it becomes: `1F562 1F695 1F004` and we see the ASCII value of 'T' (54) again in the last hex digits (leaving out the first emoji).
+Let us now try something non-ASCII like '🚤' this becomes: `1F455 1F331 1F56F 1F6B6 1F4EA 1F694`. The unicode value of '🚤' is `1F6A4` and again, the last hex digits form this value (leaving out the first emoji). 
 
 4. Before we can write a decoder we need to figure out what this first emoji is used for. This required some experimenting with all sorts of unicode values. 
 

@@ -31,7 +31,15 @@ The website they used to encode this message was: [http://172.16.1.149/v2](http:
 | Ⴆ         | 10A6                | 🌴💱🔰📪👦      | 1F334 1F4B1 1F530 1F4EA 1F466          |
 | 😌         | 1F60C               | ✅🏑💯🌶⭐🏜    |  2705 1F3D1 1F4AF 1F336  2B50 1F3DC    |
 
-5. There are a couple of ways you could use to figure out what the first emoji meant. We can see that a character with 3 emojis has a 2 in the first emoji, a character with 4 emojis has a 3, a character with 5 has a 4, a character with 6 has a 5. Or you could use the hex values of the characters to figure at that a character which uses 2 hex values has a 2 in the first emoji. A character which uses 3 hex values has 3 in the first emoji, etc. 
+5. There are a couple of ways you could use to figure out what the first emoji meant. 
+  * We can see that a character with 3 emojis has a 2 in the first emoji 
+  * A character with 4 emojis has a 3
+  * A character with 5 has a 4
+  * A character with 6 has a 5
+  Or you could use the hex values of the characters to figure it out:
+  * A character which uses 2 hex values has a 2 in the first emoji.
+  * A character which uses 3 hex values has 3 in the first emoji.
+  * ... 
 
 6. Now we know that the first emoji is used to tell the decoder how many emojis are used to encode the next character. Knowing all of this we can write a script. The script should work as follows: 
   1. Read in 1 emoji

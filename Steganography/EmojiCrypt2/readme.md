@@ -28,10 +28,10 @@ Let us now try something non-ASCII like '🚤' this becomes: `1F455 1F331 1F56F 
 
 | Character | Unicode Value (Hex) | Emojis       | Emojis Hex                             |
 | --------- | -------------------:| ------------:| -------------------------------------- |
-| T         | 54                  | ♂➕⛔         |  2642  2795  26D4                      |
-| Σ         | 3A3                 | ⏳🚳👊👓       |  23F3 1F6B3 1F44A 1F453                |
-| Ⴆ         | 10A6                | 🌴💱🔰📪👦      | 1F334 1F4B1 1F530 1F4EA 1F466          |
-| 😌         | 1F60C               | ✅🏑💯🌶⭐🏜    |  2705 1F3D1 1F4AF 1F336  2B50 1F3DC    |
+| T         | 54                  | ♂➕⛔         |  `2642  2795  26D4`                      |
+| Σ         | 3A3                 | ⏳🚳👊👓       |  `23F3 1F6B3 1F44A 1F453`                |
+| Ⴆ         | 10A6                | 🌴💱🔰📪👦      | `1F334 1F4B1 1F530 1F4EA 1F466`          |
+| 😌         | 1F60C               | ✅🏑💯🌶⭐🏜    |  `2705 1F3D1 1F4AF 1F336  2B50 1F3DC`    |
 
 5. There are a couple of ways you could use to figure out what the first emoji meant. 
    * We can see that a character with 3 emojis has a 2 in the first emoji 

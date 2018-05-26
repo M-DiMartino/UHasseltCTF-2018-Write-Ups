@@ -32,22 +32,22 @@ The website they used to encode this message was: [http://172.16.1.149/v2](http:
 | 😌         | 1F60C               | ✅🏑💯🌶⭐🏜    |  2705 1F3D1 1F4AF 1F336  2B50 1F3DC    |
 
 5. There are a couple of ways you could use to figure out what the first emoji meant. 
-  * We can see that a character with 3 emojis has a 2 in the first emoji 
-  * A character with 4 emojis has a 3
-  * A character with 5 has a 4
-  * A character with 6 has a 5
-
-  Or you could use the hex values of the characters to figure it out:
-  * A character which uses 2 hex values has a 2 in the first emoji.
-  * A character which uses 3 hex values has 3 in the first emoji.
-  * ... 
+   * We can see that a character with 3 emojis has a 2 in the first emoji 
+   * A character with 4 emojis has a 3
+   * A character with 5 has a 4
+   * A character with 6 has a 5 
+ 
+   Or you could use the hex values of the characters to figure it out:
+   * A character which uses 2 hex values has a 2 in the first emoji.
+   * A character which uses 3 hex values has 3 in the first emoji.
+   * ... 
 
 6. Now we know that the first emoji is used to tell the decoder how many emojis are used to encode the next character. Knowing all of this we can write a script. The script should work as follows: 
-  1. Read in 1 emoji
-  2. Extract the last hex digit and determine it's value, we'll call this `emojiAmount`
-  3. Read in `emojiAmount` of emojis and concatenate their last hex digits, we'll call this `emojiValue`. 
-  4. Convert `emojiValue` from a string to an unicode character and print out this character. 
-  5. If we are not at the end our string, go back to step 1.
+   1. Read in 1 emoji
+   2. Extract the last hex digit and determine it's value, we'll call this `emojiAmount`
+   3. Read in `emojiAmount` of emojis and concatenate their last hex digits, we'll call this `emojiValue`. 
+   4. Convert `emojiValue` from a string to an unicode character and print out this character. 
+   5. If we are not at the end our string, go back to step 1.
 
 The flag is: `UHCTF{EMOJIS ARE FUN}`
 
